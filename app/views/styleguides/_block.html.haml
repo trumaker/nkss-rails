@@ -29,7 +29,7 @@
     - modifiers.each do |modifier|
       .sg-modifier.sg-canvas{class: canvas_class}
         %span.sg-modifier-name= modifier.name
-        %div{style: inner_style}= capture modifier.name, &code_block
+        %div{style: inner_style}= capture modifier.class_name, &code_block
 
     .sg-html
       %pre.prettyprint.lang-html!= h(html.gsub('', ''))
