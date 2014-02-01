@@ -14,7 +14,7 @@ class StyleguidesController < ApplicationController
   end
 
   def index
-    redirect_to nkss.root_url + "1"
+    redirect_to nkss.root_url + "0"
   end
 
   def all
