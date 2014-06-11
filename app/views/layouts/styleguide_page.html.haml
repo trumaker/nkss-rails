@@ -13,7 +13,7 @@
   %aside.sg-toc
     %h1
       %strong= styleguide_title
-      Style guide
+      %small Style guide
 
     %ul
       - styleguide_sections.each do |id, name|
@@ -137,5 +137,6 @@
 
 - content_for :head do
   = stylesheet_link_tag 'styleguide'
+  = javascript_include_tag 'kss'
 
 = render file: 'layouts/styleguide'
