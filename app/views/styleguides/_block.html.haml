@@ -33,5 +33,5 @@
         -#%div{style: inner_style}= html.sub('$modifier_class', " #{modifier.class_name}").html_safe
 
     .sg-html
-      %pre.prettyprint.lang-html!= h(html.gsub('', ''))
+      %pre.prettyprint.lang-html!= h(html.gsub(/>/, ">\n"))
 
